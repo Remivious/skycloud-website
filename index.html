@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> SkyCloud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="https://discord.skycloud.ml">DISCORD</a></li>
+                    <li><a href="https://skycloud.tebex.io">STORE</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1> SkyCloud | Server</h1>
+        <p>SkyCloud is a minecraft server with cool minigames and cosmetics.<br><br>The IP to the server is:
+        </p>
+        <a href="" class="hero-btn">play.skycloud.ml</a>
+    </div>
+    </section>
+
+<section class="about">
+        <h1>Things we have</h1>
+        <p>These 3 boxes below show what we have created on the server.</p>
+
+        <div class="row">
+            <div class="about-col1">
+                <h3>Custom Ranks</h3>
+                <p>On our server, there are custom ranks you can get by buying them, applying for them or just playing!
+                </p>
+            </div>
+            <div class="about-col2">
+                <h3>Cosmetics</h3>
+                <p>We have created custom cosmetics for you to wear and show off. You can buy them in the shop for coins.
+                </p>
+            </div>
+            <div class="about-col3">
+                <h3>Minigames</h3>
+                <p>We have created a lot of minigames for you to enjoy, and some games you have never seen before.
+                </p>
+            </div>
+        </div>
+</section>
+
+<section class="team">
+    <h1>Meet the team</h1>
+    <p>Meet the team that is working on the server and make it great!</p>
+    <div class="row">
+        <div class="team-1">
+            <h3>Remivious</h3>
+            <h2>Server Director</h2>
+            <p>Hi! My name is Emil and I am the director of all operations. I'm the founder of the server, and my main tasks are managing the server. If I'm not working on the server, I am usually playing on the server.</p>
+        </div>
+        <div class="team-2">
+            <h3>TheMaksio</h3>
+            <h2>Director</h2>
+            <p>Hey, I'm Maks! I am the director of the operations, and I make decisions with Emil. I mostly work on the maps and the plugins.</p>
+        </div>
+        <div class="team-3">
+            <h3>TheEmperorMohid</h3>
+            <h2>Head Moderator</h2>
+            <p>Hello! It is my job to keep the server in a safe environment. I am the head leader of the moderation team of the server.</p>
+        </div>
+    </div>
+</section>
+
+<section class="discord">
+    <h1>Join our server!</h1>
+    <p>We have Discord server that you can join that has patch logs, sneek peeks and more!<br> You can contact the staff team there. Come join us!</p>
+    <a href="https://discord.skycloud.ml" class="hero-btn">Join our Discord</a>
+</section>
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
