@@ -41,6 +41,8 @@
                     </form>
                 </div>
             </div>
+            <p></p>
+            <span id="msg"></span>
         </div>
 </section>
 
@@ -48,12 +50,18 @@
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyyRA2EKRiVrQhnb275WiZNwNjstczfrP0DH5DrQe7XRAWf915w1srRjkV87vj-3y604g/exec'
     const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
   
     form.addEventListener('submit', e => {
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
+        .then(response => {
+            msg.innerHTML = "Your request to sign up was successful!"
+    })
+        .catch(error => {
+            console.error('Error!', error.message)
+            msg.innerHTML = "There was an error while signing you up!"
+        })
     })
   </script>
 
